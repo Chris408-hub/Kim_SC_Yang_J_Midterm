@@ -93,12 +93,12 @@ ul li {
     grid-column: 11/-1;
     margin-top: 85px;
     margin-left: -20px;
-}
 
 #header-icons img{
     width: 34px;
     height: 34px;
-}
+    padding-left: 20px;
+
 
 /* 4. ---Main--- */
 
@@ -111,7 +111,7 @@ ul li {
     font-weight: 700;
     padding-left: 450px;
     color: #E30C5F;
-}
+
 
 #email p {
     font-size: 30px;
@@ -119,7 +119,6 @@ ul li {
     padding-bottom: 50px;
     line-height: 140%;
 
-}
 
 #sign-up #email-box {
     width: 1543px;
@@ -148,7 +147,8 @@ ul li {
 #sign-up h3 {
     font-size: 30px;
     font-weight: 500;
-}
+    font-weight: 500px;
+
 
 #personal-info {
     margin-top: 100px;
