@@ -29,7 +29,8 @@
 }
 
 body {
-font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+}
 
 a{
     text-decoration: none;
@@ -55,7 +56,6 @@ the grid using CSS. It is a class because we will use multiple grids */
     height: 138px;
     padding-left: 5px;   
 } */
-
 #main-header{
     width: 1920px;
     height: 140px;
@@ -98,10 +98,12 @@ ul li {
     grid-column: 11/-1;
     margin-top: 85px;
     margin-left: -20px;
+}
 
 #header-icons img{
     width: 34px;
     height: 34px;
+}
 
 /* 4. ---Main Hero Image--- */
 
@@ -128,7 +130,6 @@ ul li {
     background-color:#E30C5F;
     color: white;
     border: solid #E30C5F;
-
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -203,6 +204,7 @@ ul li {
     margin-top: 300px;
     line-height: 130%;
 }
+
 
 .gallery-click {
     width: 215px;
@@ -339,37 +341,78 @@ ul li {
     background-color: #FFC9EB;
 }
 
-#about-history-shop #about-us1 {
+#about-us1 img {
+    width: 387px;
+    height: 385px;
+    border: solid #FFC9EB;
+    border-radius: 50%;
     grid-column: 3/5; 
+    margin-top: 150px;
 }
 
-#about-history-shop #about-us2 {
-grid-column: 5/8;
-padding-left: 105px;;
+#about-us2 img {
+    width: 387px;
+    height: 385px;
+    border: solid #FFC9EB;
+    border-radius: 50%;
+    grid-column: 5/7;
+    margin-top: 150px;
 }
 
-#about-history-shop #about-us3 {
-grid-column: 8/10;
-padding-left: 50px;
+#about-us3 img {
+    width: 387px;
+    height: 385px;
+    border: solid #FFC9EB;
+    border-radius: 50%;
+    grid-column: 7/9;
+    margin-top: 150px;
 }
 
-#about-history-shop .box{
-    position: relative;
-}
-
-#about-history-shop .box button{
+#about-click1 {
     width: 193px;
-    height: 75px;
+    height: 74px;
+    grid-column: 3/4;
+    background-color: white;
+    border: solid 0.1em #E30C5F;
+    color: #E30C5F;
+    font-size: 20px;
     border-radius: 50px;
-    position: absolute;
-    bottom:20px;
-    /* left:50%; */
+    margin-top: -50px;
+    margin-left: 90px;
 }
 
-#about-history-shop .box button a{
-    color:white;
+#about-click2 {
+    width: 193px;
+    height: 74px;
+    grid-column: 5/7;
+    background-color: white;
+    border: solid 0.1em #E30C5F;
+    color: #E30C5F;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: -50px;
+    margin-left: 100px;
 }
 
+#about-click3 {
+    width: 193px;
+    height: 74px;
+    grid-column: 7/10;
+    background-color: white;
+    border: solid 0.1em #E30C5F;
+    color: #E30C5F;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+
+#about-click1, #about-click2, #about-click3 p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
 
 
 /* 10. ---Sign up--- */
