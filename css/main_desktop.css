@@ -30,12 +30,9 @@
 
 body {
 font-family: 'Josefin Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-}
 
 a{
     text-decoration: none;
-
 }
 
 
@@ -59,6 +56,12 @@ the grid using CSS. It is a class because we will use multiple grids */
     padding-left: 5px;   
 } */
 
+#main-header{
+    width: 1920px;
+    height: 140px;
+    background-color: #E64584;
+}
+
 ul li {
     display: inline-block;
 }
@@ -66,9 +69,8 @@ ul li {
 
 #header-logo {
     width: 315px;
-    height: 133px;
     grid-column: 1/2;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-left: 15px;
 }
 
@@ -81,92 +83,64 @@ ul li {
 }
 
 #header-nav li a{
-    padding-left: 40px;
-    color: black;
+    padding-left: 50px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#header-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #header-icons {
-    width: 237px;
-    height: 35px;
     grid-column: 11/-1;
     margin-top: 85px;
-    margin-right: -10px;
-    padding-left: 70px;
-
-}
+    margin-left: -20px;
 
 #header-icons img{
     width: 34px;
     height: 34px;
-    padding-left: 20px;
-}
 
 /* 4. ---Main Hero Image--- */
-
-#hero {
-    position:relative;
-}
 
 .hero-images {
     width: 1920px;
     height: 950px;
     margin: auto 0;
-    margin-bottom: 20px;
     overflow: hidden;
 }
 
-.hero-images img{
-    width: 1920px;
-    height: 950px;
-    float: left;
-}
-
-.active{
-    display: block;
-}
-
-#hero #hero-text1{
-    position:absolute;
+#hero{
     top:200px;
     right: 80px;
     font-size:100px;
     font-weight: 500px;
 }
 
-#sign .left{
-    position: absolute;
-    top:400px;
-    left:50px  
-}
-
-#sign .right{
-    position: absolute;
-    top:400px;
-    right:50px
-}
-/* 
-.dots {
-    width: 126px;
-    height: 36px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    grid-column: 6/7;
-} */
-
 #shop{
     position: fixed;
-    top:950px;
-    left:1624px;
+    top: 950px;
+    left: 1624px;
     width: 253px;
     height: 74px;
-    background-color:#707070;
+    background-color:#E30C5F;
     color: white;
+    border: solid #E30C5F;
+
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
 }
 
 /* 5. ---What's new--- */
+
+#video{
+    width: 1920px;
+    height: 1080px;
+    background-color: #429377;
+}
 
 #video div {
     grid-column:4/9;
@@ -177,62 +151,80 @@ ul li {
 #video-text{
     width: 890px;
     height: 507px;
+    color: white;
 }
 
-#video #video-text h2{
-    font-size: 60px;
+#video-text h2{
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 700;
     padding-top: 60px;
-   padding-bottom: 75px;
+    padding-bottom: 65px;
     
 }
 
-#video #video-text p {
+#video-text p {
+    font-family: 'Montserrat';
     font-size: 20px;
-    padding-bottom: 20px;
+    font-weight: 100;
+    line-height: 130%;
+    padding-bottom: 10px;
     padding-left: 10px;
 
 }
 
-#video #video-image {
-    margin-top: -132px;
+#video #video-p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#video-image {
+    width: 974px;
+    height: 483px;
+    margin-top: 20px;
 }
 
 
 /* 6. ---Gallery--- */
 
-#gallery > div {
+.gallery-image {
     width: 1920px;
     height: 1080px;
 }
 
-.gallery-image{
-    grid-column: 2/5;
-    padding-top: 80px;
+.gallery-text-A {
+    grid-column: 8/-1;
+    margin-top: 300px;
+    line-height: 130%;
 }
 
-.gallery-text {
-    grid-column: 7/10;
-    padding-top: 150px;
+.gallery-text-B {
+    grid-column: 2/6;
+    margin-top: 300px;
+    line-height: 130%;
 }
 
 .gallery-click {
     width: 215px;
     height: 45px;
     border-radius: 50px;
+    border: solid #F8B851;
     font-size: 20px;
-    grid-column: 7/8;
-    margin-top:-700px;
-    background-color:#707070;
+    grid-column: 8/9;
+    margin-top: -520px;
+    background-color: #F8B851;
+    color: white;  
 }
 
-.gallery-click a {
-    color: white;  
-
+#gallery2-click, #gallery3-click {
+    grid-column: 2/3;
+    margin-top:-520px;
 }
 
 #gallery h2{
-    font-size: 20px;
+    font-size: 35px;
     margin-top: 30px;
+    font-weight: 500;
 }
 
 #gallery p{
@@ -244,23 +236,33 @@ ul li {
 /* 7. ---Testimonial--- */
 
 .testimonial {
-    width: 1915px;
+    width: 1920px;
     height: 921px;
 }
 
 #testimonial #user1 .text {
-    grid-column: 2/7;
-    margin-top: -600px;
+    grid-column: 2/8;
+    margin-top: -700px;
 }
 
 #testimonial .text h2{
     font-size: 100px;
-    font-weight: 500px;
+    font-weight: 700;
+    color: #2E01A7;
 }
 
 #testimonial .text h3 {
+    font-size: 20px;
     padding-left: 600px;
+    margin-top: 10px;
     margin-bottom: 60px;
+    color: #2E01A7;
+}
+
+#testimonial .text p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #2E01A7;
 }
 
 #testimonial #user1 img {
@@ -271,11 +273,12 @@ ul li {
 
 #testimonial #user2 img {
     grid-column: 2/4;
+    margin-top: 50px;
 }
 
 #testimonial #user2 .text {
-    grid-column: 6/11;
-
+    grid-column: 7/-1;
+    margin-top: 50px;
 }
 
 /* #testimonial .buynow {
@@ -297,18 +300,30 @@ ul li {
 
 /* 8. ---Social media--- */
 
+#social-media {
+    background-color: #FFC9EB;
+    height: 400px;
+}
+
 #social-media h2 {
-    grid-column: 4/9;
+    grid-column: 5/10;
     font-size: 70px;
     font-weight: 500;
-    margin-bottom: 50px;
-    margin-top:-120px;
-    margin-left: 150px;
+    margin-top: 130px;
+    color: #429377;
+}
+
+#about-history-shop {
+    width: 1920px;
+    height: 700px;
+    background-color: #FFC9EB;
 }
 
 #social-media div {
     width: 600px;
+    background-color: #FFC9EB;
     grid-column: 5/8;
+    margin-top: 80px;
     margin-bottom: 150px;
 }
 
@@ -320,9 +335,12 @@ ul li {
 
 /* 9. ---Quick links--- */
 
+#about-history-shop {
+    background-color: #FFC9EB;
+}
 
 #about-history-shop #about-us1 {
-    grid-column: 3/5;
+    grid-column: 3/5; 
 }
 
 #about-history-shop #about-us2 {
@@ -359,28 +377,28 @@ padding-left: 50px;
 #sign-up {
     width: 100%;
     height: 140px;
-    background-color:#C7C7C7;
-    margin-top: 200px;
-    text-align: center;
-   
+    background-color:#E30C5F;
+    text-align: center; 
 }
 
 #sign-up h2{
     grid-column: 2/9;
     color: white; 
     font-size: 40px;
+    font-weight: 700;
     margin-top: 50px;
+    letter-spacing: normal;
 }
-
 
 #sign-up button {
     grid-column: 10/11;
     width: 253px;
     height: 74px;
     border-radius: 50px;
+    border: solid #E30C5F;
     background-color: white;
     font-size: 30px;
-    color: #707070;
+    color: #E30C5F;
     margin-top: 40px;
 
 }
@@ -392,7 +410,7 @@ padding-left: 50px;
 #footer-Map {
     width: 100%;
     height: 560px;
-    background-color: #434242;
+    background-color: #429377;
     color: white;
     padding-top: 100px;
 }
@@ -436,7 +454,7 @@ color: white;
 #policy-Con {
     width: 100%;
     height: 178px;
-    background-color: #212020;
+    background-color: #265847;
     color: white;
 }
 
