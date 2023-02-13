@@ -27,6 +27,10 @@ a{
 
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+    
 
 /* 2. ---Grid--- */
 
@@ -48,16 +52,20 @@ the grid using CSS. It is a class because we will use multiple grids */
     padding-left: 5px;   
 } */
 
+#main-header{
+    width: 1920px;
+    height: 140px;
+    background-color: #E64584;
+}
+
 ul li {
     display: inline-block;
 }
 
-
 #header-logo {
     width: 315px;
-    height: 133px;
     grid-column: 1/2;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-left: 15px;
 }
 
@@ -70,24 +78,26 @@ ul li {
 }
 
 #header-nav li a{
-    padding-left: 40px;
-    color: black;
+    padding-left: 50px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#header-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #header-icons {
-    width: 237px;
-    height: 35px;
     grid-column: 11/-1;
     margin-top: 85px;
-    margin-right: -10px;
-    padding-left: 70px;
-
+    margin-left: -20px;
 }
 
 #header-icons img{
     width: 34px;
     height: 34px;
-    padding-left: 20px;
 }
 
 /* 4. ---Main--- */
@@ -98,21 +108,23 @@ ul li {
 
 #email h2 {
     font-size: 100px;
-    font-weight: 500px;
+    font-weight: 700;
     padding-left: 450px;
+    color: #E30C5F;
 }
 
 #email p {
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
+    line-height: 140%;
 
 }
 
 #sign-up #email-box {
     width: 1543px;
     height: 110px;
-    border: 1px solid #707070;
+    border: 1px solid #E30C5F;
     border-radius: 50px;
     margin-top: 20px;
 }
@@ -120,8 +132,9 @@ ul li {
 #email #send-code{
     width: 620px;
     height: 110px;
+    border: solid #E30C5F;
     border-radius: 50px;
-    background-color: #C7C7C7;
+    background-color: #E30C5F;
     color: white;
     margin-top: 30px;
     text-align: center;
@@ -134,7 +147,7 @@ ul li {
 
 #sign-up h3 {
     font-size: 30px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 #personal-info {
@@ -147,7 +160,7 @@ ul li {
 
     width: 757px;
     height: 110px;
-    border: 1px solid #707070;
+    border: 1px solid #E30C5F;
     border-radius: 50px;
     margin-top: 20px;
 }
@@ -189,7 +202,8 @@ ul li {
     width: 396px;
     height: 110px;
     border-radius: 50px;
-    background-color:#707070;
+    background-color:#E30C5F;
+    border: 1px solid #E30C5F;
     color: white;
     text-align: center;
     font-size: 40px;
@@ -212,24 +226,13 @@ ul li {
 } */
 
 
-#main-logo {
-    width: 315px;
-    height: 133px;
-    margin-top: 90px;
-    padding-left: 450px;
-    margin-bottom: -83px
-}
-
-
-
-
 /* 5. ---Footer--- */
 
 
 #footer-Map {
     width: 100%;
     height: 560px;
-    background-color: #434242;
+    background-color: #429377;
     color: white;
     padding-top: 100px;
 }
@@ -273,7 +276,7 @@ color: white;
 #policy-Con {
     width: 100%;
     height: 178px;
-    background-color: #212020;
+    background-color: #265847;
     color: white;
 }
 
