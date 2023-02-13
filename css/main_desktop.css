@@ -1,0 +1,491 @@
+/* 
+
+    CSS Guide
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main Hero Image
+    5. What's new
+    6. Gallery
+    7. Testimonial
+    8. Social media
+    9. Quick links
+    10. Sign up
+    11. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 1920px;
+    margin: auto 0;
+}
+
+body {
+font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* 2. ---Grid--- */
+
+/* this is the exact same grid used in Adobe XD, we have recreated 
+the grid using CSS. It is a class because we will use multiple grids */
+
+.grid {
+    display: grid;
+    padding-right: 4px; 
+    grid-template-columns: repeat(12, 145px);
+    grid-column-gap: 16px;
+}
+
+/* 3. ---Header--- */
+
+/* header{
+    width: 100%;
+    height: 138px;
+    padding-left: 5px;   
+} */
+#main-header{
+    width: 1920px;
+    height: 140px;
+    background-color: #E64584;
+}
+
+ul li {
+    display: inline-block;
+}
+
+
+#header-logo {
+    width: 315px;
+    grid-column: 1/2;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+#header-nav {
+    width: 500px;
+    height: 22px;
+    grid-column: 4/6;
+    margin-top: 90px;
+    font-size: 20px;
+}
+
+#header-nav li a{
+    padding-left: 50px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#header-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#header-icons {
+    grid-column: 11/-1;
+    margin-top: 85px;
+    margin-left: -20px;
+}
+
+#header-icons img{
+    width: 34px;
+    height: 34px;
+}
+
+/* 4. ---Main Hero Image--- */
+
+.hero-images {
+    width: 1920px;
+    height: 950px;
+    margin: auto 0;
+    overflow: hidden;
+}
+
+#hero{
+    top:200px;
+    right: 80px;
+    font-size:100px;
+    font-weight: 500px;
+}
+
+#shop{
+    position: fixed;
+    top: 950px;
+    left: 1624px;
+    width: 253px;
+    height: 74px;
+    background-color:#E30C5F;
+    color: white;
+    border: solid #E30C5F;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* 5. ---What's new--- */
+
+#video{
+    width: 1920px;
+    height: 1080px;
+    background-color: #429377;
+}
+
+#video div {
+    grid-column:4/9;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#video-text{
+    width: 890px;
+    height: 507px;
+    color: white;
+}
+
+#video-text h2{
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-bottom: 65px;
+    
+}
+
+#video-text p {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+#video #video-p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#video-image {
+    width: 974px;
+    height: 483px;
+    margin-top: 20px;
+}
+
+
+/* 6. ---Gallery--- */
+
+.gallery-image {
+    width: 1920px;
+    height: 1080px;
+}
+
+.gallery-text-A {
+    grid-column: 8/-1;
+    margin-top: 300px;
+}
+
+.gallery-text-B {
+    grid-column: 2/6;
+    margin-top: 300px;
+}
+
+
+.gallery-click {
+    width: 215px;
+    height: 45px;
+    border-radius: 50px;
+    border: solid #F8B851;
+    font-size: 20px;
+    grid-column: 8/9;
+    margin-top: -550px;
+    background-color: #F8B851;
+    color: white;  
+}
+
+#gallery2-click, #gallery3-click {
+    grid-column: 2/3;
+    margin-top:-520px;
+}
+
+#gallery h2{
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+#gallery p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+/* 7. ---Testimonial--- */
+
+.testimonial {
+    width: 1920px;
+    height: 921px;
+}
+
+#testimonial #user1 .text {
+    grid-column: 2/8;
+    margin-top: -700px;
+}
+
+#testimonial .text h2{
+    font-size: 100px;
+    font-weight: 700;
+}
+
+#testimonial .text h3 {
+    padding-left: 600px;
+    margin-bottom: 60px;
+}
+
+#testimonial #user1 img {
+    grid-column: 8/11;
+    margin-left: 80px;
+    margin-top: 200px;
+}
+
+#testimonial #user2 img {
+    grid-column: 2/4;
+}
+
+#testimonial #user2 .text {
+    grid-column: 6/11;
+
+}
+
+/* #testimonial .buynow {
+    width: 300px;
+    height: 130px;
+    background-color:#707070;
+    color: white; 
+
+}
+#testimonial #buynow1 {
+    grid-column: 3/4;
+}
+
+#testimonial #buynow2 {
+    grid-column: 9/10;
+} */
+
+
+
+/* 8. ---Social media--- */
+
+#social-media {
+    background-color: #FFC9EB;
+    height: 400px;
+}
+
+#social-media h2 {
+    grid-column: 5/10;
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 130px;
+    color: #429377;
+}
+
+#about-history-shop {
+    width: 1920px;
+    height: 700px;
+    background-color: #FFC9EB;
+}
+
+#social-media div {
+    width: 600px;
+    background-color: #FFC9EB;
+    grid-column: 5/8;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+#social-media div img {
+    width: 98px;
+    height: 98px;
+    padding-left: 90px;
+}
+
+/* 9. ---Quick links--- */
+
+#about-history-shop {
+    background-color: #FFC9EB;
+}
+
+#about-history-shop #about-us1 {
+    grid-column: 3/5; 
+}
+
+#about-history-shop #about-us2 {
+grid-column: 5/8;
+padding-left: 105px;;
+}
+
+#about-history-shop #about-us3 {
+grid-column: 8/10;
+padding-left: 50px;
+}
+
+#about-history-shop .box{
+    position: relative;
+}
+
+#about-history-shop .box button{
+    width: 193px;
+    height: 75px;
+    border-radius: 50px;
+    position: absolute;
+    bottom:20px;
+    /* left:50%; */
+}
+
+#about-history-shop .box button a{
+    color:white;
+}
+
+
+
+/* 10. ---Sign up--- */
+
+#sign-up {
+    width: 100%;
+    height: 140px;
+    background-color:#E30C5F;
+    text-align: center; 
+}
+
+#sign-up h2{
+    grid-column: 2/9;
+    color: white; 
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 50px;
+    letter-spacing: normal;
+}
+
+#sign-up button {
+    grid-column: 10/11;
+    width: 253px;
+    height: 74px;
+    border-radius: 50px;
+    border: solid #E30C5F;
+    background-color: white;
+    font-size: 30px;
+    color: #E30C5F;
+    margin-top: 40px;
+
+}
+
+
+/* 11. ---Footer--- */
+
+
+#footer-Map {
+    width: 100%;
+    height: 560px;
+    background-color: #429377;
+    color: white;
+    padding-top: 100px;
+}
+
+#footer-Map h2 {
+font-size: 40px;
+font-weight: 500px;
+margin-bottom: 30px;
+}
+
+#footer-Map ul li {
+    display: block;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#footer-Map ul li a {
+color: white;
+}
+
+#footer-Map #map1 {
+    grid-column: 2/4;
+}
+
+
+#footer-Map #map2 {
+    grid-column: 4/7;
+    margin-left: 100px;
+}
+
+
+#footer-Map #map3 {
+    grid-column: 8/8;
+}
+
+
+#footer-Map #map4 {
+    grid-column: 10/-1;
+}
+
+#policy-Con {
+    width: 100%;
+    height: 178px;
+    background-color: #265847;
+    color: white;
+}
+
+#policy-Con #policy-copy {
+    grid-column: 2/8;
+    font-size: 25px;
+    color: #FAF7F7;
+    padding-top: 70px;
+ 
+}
+
+#policy-Con #policy-copy li a{
+    padding-left: 20px;
+    color: white;
+
+}
+
+
+#policy-Con #footer-sns {
+    grid-column: 9/10;
+    width: 600px;
+ 
+}
+
+#policy-Con #top-scroll {
+    grid-column: 11/11;
+    position: relative;
+    padding-top: 70px;
+ 
+}
+
+#policy-Con #top-scroll p{
+    position: absolute;
+    left: 35px;
+    bottom: 140px;
+    margin-bottom: -73px;
+
+}
+
+
+#footer-sns img {
+    width: 35px;
+    height: 35px;
+    padding-left: 35px;
+    padding-top: 70px;
+}
