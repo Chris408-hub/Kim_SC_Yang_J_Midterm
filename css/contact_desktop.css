@@ -83,6 +83,12 @@ ul li {
     font-family: 'Montserrat';
 }
 
+#header-nav li a:hover {
+    color: #2E01A7;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 #header-icons ul {
     display: flex;
     flex-direction: row;
@@ -231,22 +237,23 @@ ul li {
 
 #footer-Map {
     width: 100%;
-    height: 560px;
+    height: 460px;
     background-color: #429377;
     color: white;
     padding-top: 100px;
 }
 
 #footer-Map h2 {
-font-size: 40px;
-font-weight: 500px;
-margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
 }
 
 #footer-Map ul li {
     display: block;
     font-size: 30px;
-    margin-top: 30px;
+    font-weight: 500;
+    line-height: 200%;
 }
 
 #footer-Map ul li a {
@@ -259,18 +266,37 @@ color: white;
 
 
 #footer-Map #map2 {
-    grid-column: 4/7;
-    margin-left: 100px;
+    grid-column: 5/7;
 }
 
 
 #footer-Map #map3 {
-    grid-column: 8/8;
+    grid-column: 8/10;
 }
 
 
 #footer-Map #map4 {
-    grid-column: 10/-1;
+    grid-column: 11/-1;
+}
+
+#map1 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map2 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map3 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map4 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
 }
 
 #policy-Con {
@@ -278,48 +304,62 @@ color: white;
     height: 178px;
     background-color: #265847;
     color: white;
-}
-
-#policy-Con #policy-copy {
-    grid-column: 2/8;
+    font-family: 'Josefin Sans';
+    font-weight: 100;
     font-size: 25px;
-    color: #FAF7F7;
-    padding-top: 70px;
- 
 }
 
-#policy-Con #policy-copy li a{
-    padding-left: 20px;
-    color: white;
+#policy-info {
 
+    grid-column: 2/9;
+    margin-top: 30px;
+}
+
+#policy-info li {
+    padding-right: 30px;
+}
+
+#policy-info li:last-child {
+    padding-left: 30px;
+}
+
+#policy-Con li a{
+    color: white;
+}
+
+#policy-Con li a:hover {
+    color: #F8B851;
+    text-decoration: underline #F8B851;
+    font-weight: 400;
 }
 
 
 #policy-Con #footer-sns {
     grid-column: 9/10;
     width: 600px;
- 
 }
-
-#policy-Con #top-scroll {
-    grid-column: 11/11;
-    position: relative;
-    padding-top: 70px;
- 
-}
-
-#policy-Con #top-scroll p{
-    position: absolute;
-    left: 35px;
-    bottom: 140px;
-    margin-bottom: -73px;
-
-}
-
 
 #footer-sns img {
     width: 35px;
     height: 35px;
     padding-left: 35px;
     padding-top: 70px;
+    margin-top: -43px;
 }
+
+#policy-Con #top-scroll {
+    grid-column: 12/-1;
+    margin-top: 30px;
+}
+
+#policy-Con #top-scroll img{
+    width: 10px;
+    height: 13px;
+}
+
+#policy-Con #top-scroll p{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
