@@ -1,3 +1,6 @@
+![alt text](images/hero.jpg "orbitz")
+
+
 # Best of Best beverage - Orbitz! 
 
 Welcome to the completely new Orbitz.
@@ -13,4 +16,5 @@ Welcome to the completely new Orbitz.
 
 
 ## License
+
 All copywrite are included by Orbitz company
