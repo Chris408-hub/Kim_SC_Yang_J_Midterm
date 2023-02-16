@@ -6,108 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>This is the best drink - Orbitz!</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main-mobile.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main_mobile.css" rel="stylesheet">
 </head>
 <body>
     <h1 class="hidden">Special Beverage - Orbitz</h1>
     <div class="container">
-        <header id="main-header" class="grid">
-            <div id="header-logo" class="box-color"></div>
-            <nav id="header-hamburger" class="box-color">
+        <header id="main-header">
+            <div id="header-logo"><img src="images/white-logo.svg" alt="logo"></div>
+            <nav id="header-hamburger">
                 <h2 class="hidden">Main Navigation</h2>
+                <img src="images/mobile/hamburger.png" alt="hamburger menu">
+                <ul class="hidden">
+                    <li><a href="index_mobile.html">HOME</a></li>
+                    <li><a href="about_mobile.html">ABOUT</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="contact_mobile.html">Log-in</a></li>
+                </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero" class="grid">
-                <img src="http://via.placeholder.com/375x950/000000/ffffff" class="hero-image">
-                <div id="hero-text" class="box-color2"><h2>Lorem ipsum dolor sit amet</h2></div>
+            <section id="hero">
+                <h2 class="hidden">hero-image</h2>
+                <img src="images/mobile/hero.png" class="hero-image">
             </section>
 
-            <section id="video" class="grid">
-                <div id="video-text1" class="box-color2"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></div>
-                <div id="video-text2" class="box-color2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi cumque consequuntur, error explicabo voluptatem fugit iste iusto ipsa atque. Corporis earum illo dicta deserunt dolores quia illum esse sapiente vel ipsum dolor sit, amet consectetur adipisicing elit. Modi cumque consequuntur, error explicabo voluptatem fugit.</p></div>
-                <div id="video-image"><img src="http://via.placeholder.com/375x210/000000/070707"></div>
+            <section id="sign-up">
+                <h2 class="hidden">sign-up</h2>
+                    <p>Sign up for <br>15% off your<br> next Orbitz <br>Store Order</p>
+                    <button id="sign">SIGN UP</button>
             </section>
 
-            <section id="gallery1" class="grid">
-                <div id="gallery1-image"><img src="http://via.placeholder.com/360x450/000000/ffffff" class="gallery-image"></div>
-                <div id="gallery1-text">
-                    <h2>This is apple favor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea enim fugiat voluptate, optio similique et!</p>
+            <section id="video">
+                <div id="video-text"><h2>What’s new</h2>
+                <p><span id="video-p">We use apple cider vinegar for your digestive health benefit! </span><br>For centuries, people have turned to apple cider vinegar for digestive health, but you cannot taste any acidic vinegar because we put it in stealth mode making our special soda beverage. Enjoy the fresh and rich taste of fruit, the healthiness of vinegar, and the coolness of canonic acid. </p></div>
+                <div id="video-image"><img src="images/mobile/video.png"></div>
+            </section>
+
+            <section id="gallery">
+                <div id="gallery1" class="grid">
+                    <div class="gallery-image" id="gallery1-image"><img src="images/mobile/galley1.png" alt="gallery-image1"></div>
+                    <div class="gallery-text" id="gallery1-text">
+                        <h2>Orbitz’s Apple Soda</h2>
+                        <p>Orbitz made with carefully selected green apples grown in Ontario, which produces the world most delicious apple in the cool temperature of Great Lakes.</p>
+
+                    </div>
+                    <button class="gallery-click" id="gallery1-click">See More</button>
                 </div>
-                <div id="gallery1-click"><a href="#.html"><p>See More</p></a></div>
-            </section>
-
-            <section id="gallery2" class="grid">
-                <div id="gallery2-image"><img src="http://via.placeholder.com/360x450/000000/ffffff" class="gallery-image"></div>
-                <div id="gallery2-text">
-                    <h2>This is apple favor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea enim fugiat voluptate, optio similique et!</p>
-                </div>
-                <div id="gallery2-click"><a href="#.html"><p>See More</p></a></div>
-            </section>
-
-            <section id="gallery3" class="grid">
-                <div id="gallery3-image"><img src="http://via.placeholder.com/360x450/000000/ffffff" class="gallery-image"></div>
-                <div id="gallery3-text">
-                    <h2>This is apple favor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea enim fugiat voluptate, optio similique et!</p>
-                </div>
-                <div id="gallery3-click"><a href="#.html"><p>See More</p></a></div>
-            </section>
-
-            <section id="gallery4" class="grid">
-                <div id="gallery4-image"><img src="http://via.placeholder.com/360x450/000000/ffffff" class="gallery-image"></div>
-                <div id="gallery4-text">
-                    <h2>This is apple favor</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea enim fugiat voluptate, optio similique et!</p>
-                </div>
-                <div id="gallery4-click"><a href="#.html"><p>See More</p></a></div>
-            </section>
-
-            <section id="about-history-shop" class="grid">
-                <h2 class="hidden">our story and more information</h2>
-               
-                    <img id="img1" src="http://via.placeholder.com/300x415/000000/ffffff" alt="About Us">
-                    <div id="about-click1"><a href="#.html"><p>More Info</p></a></div>
-                    
-                    <img id="img2" src="http://via.placeholder.com/300x415/000000/ffffff" alt="Our History">
-                    <div id="about-click2"><a href="#.html"><p>More Info</p></a></div>
-
-                    <img id="img3" src="http://via.placeholder.com/300x415/000000/ffffff" alt="Shop Now">
-                    <div id="about-click3"><a href="#.html"><p>More Info</p></a></div>
-            </section>
-
-            <section id="sign-up" class="grid">
-                <div id="sign-Con">
-                    <h2>Sign Up for 15% off your next Orbitz Store Order</h2>
-                </div>
-                <div id="sign-click"><a><p>SIGN UP</p></a></div>
-            </section>
             
-            <footer id="footer-Con">
-               <section id="footer-Map" class="grid">
-                <h2 class="hidden">Footer Navigation</h2>
-                <div id="map1"></div>
-                <div id="map2"></div>
-                <div id="map3"></div>
-                <div id="map4"></div>
-               </section>
-               
-              <div id="policy-Con" class="grid">
-               <div id="policy-copy"></div>
 
-               <div id="footer-sns">
-                    <div id="instagram"></div>
-                    <div id="twitter"></div>
-                    <div id="facebook"></div>
-               </div>
-               <div id="top-scroll"></div>
-            </div>
-            </footer>
+                <div id="gallery2" class="grid">
+                    <div class="gallery-image" id="gallery2-image"><img src="images/mobile/galley2.png" alt="gallery-image2"></div>
+                    <div class="gallery-text" id="gallery2-text">
+                        <h2>Orbitz Cranberry Soda</h2>
+                        <p>Cranberries are healthy food that eliminates inflammation in the body with powerful antioxdants. It is made by minimizing the astringent taste of it and maximizing the unique aroma and taste. </p>
+                    </div>
+                    <button class="gallery-click" id="gallery2-click">See More</button>
+                </div>
+
+                <div id="gallery3" class="grid">
+                    <div class="gallery-image" id="gallery3-image"><img src="images/mobile/galley3.png" alt="gallery-image3"></div>
+                    <div class="gallery-text" id="gallery3-text">
+                        <h2>Orbitz Pineapple Soda</h2>
+                        <p>Pineapple not only is so sweet but also contains carbohydrates, proteins, fats, fibre, vitamin B and C, folic acid, potassium, and other nutrients. It is even more refreshing by adding carbonic acid to the most loved fruit in the world. </p>
+                    </div>
+                    <button class="gallery-click" id="gallery3-click">See More</button>
+                </div>
+            
+
+                <div id="gallery4" class="grid">
+                    <div class="gallery-image" id="gallery4-image"><img src="images/mobile/galley4.png" alt="gallery-image4"></div>
+                    <div class="gallery-text" id="gallery4-text">
+                        <h2>Orbitz Strawberry Soda</h2>
+                        <p>Efficacy of Strawberries not only does it prevents colds, but it also prevents melanin pigment from accumulating on the skin. Anthocyanins contained in strawberries play a role in stabilizing the eyes.</p>
+                    </div>
+                    <button class="gallery-click" id="gallery4-click">See More</button>
+                </div>
+            </section>
+
+
+
+            <section id="testimonials">
+                <div id="user1" class="testimonial grid">
+                        <h2>"My Best Drink!"</h2>
+                        <img src="images/mobile/testimonial1.png" alt="user1">
+                        <h3>Julie D</h3>
+                        <p>“I was a huge fan of the original Orbitz back in the day, and I’m so happy that the brand is back with a fresh new look and innovative flavors. The texture is still just as unique and fun as I remember, but now the flavors are even more delicious and better for me too. I can’t get enough of the new flavor!”</p>
+                        <button id="buynow">Buy now</button>
+                </div>
+                    
+                    <!-- <div class="buynow hidden" id="buynow1"><a href="#">Buy now</a></d> -->
+               
+
+                 <div id="user2" class="testimonial grid">                   
+                        <h2>"Refresh!"</h2>
+                        <img src="images/mobile/testimonial2.png" alt="user2">
+                        <h3>Eric J</h3>
+                        <p>“The new Orbitz is the perfect beverage for me and my friends. We’re always looking for new and exciting products to try, and the innovative flavors and textural experience of the new Orbitz make it a real standout. Plus, the eco-friendly packaging and health-conscious ingredients make it a responsible choice too.”</p>
+                        
+                        <button id="buynow">Buy now</button>
+                </div>
+                    <!-- <div class="buynow hidden" id="buynow2"><a href="#">Buy now</a></div> -->
+                
+            </section>
+
+            <section id="social-media" class="grid">
+                <h2>Get really real with us</h2>
+                <div class="socia-icons">
+                    <ul>
+                        <li><a href="#"><img src="images/mobile/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/mobile/in.png" alt="in"></a></li>
+                        <li><a href="#"><img src="images/mobile/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section id="about-history-shop">
+                <h2 class="hidden">our story and more information</h2>
+                     
+                <div id="about-us1" class="grid">
+                    <img class="about-image" src="images/mobile/1.png" alt="About Us">
+                    <button class="about-click" id="about-click1">Our Story</button>
+                </div>
+            
+
+                <div id="about-us2" class="grid">
+                    <img class="about-image" src="images/mobile/2.png" alt="Our History">
+                    <button class="about-click" id="about-click2">Shop Now</button>
+                </div>
+
+                    
+                <div id="about-us3" class="grid">
+                    <img class="about-image" src="images/mobile/3.png" alt="Shop Now">
+                    <button class="about-click" id="about-click3">Contact Us</button>
+                </div>
+            </section>
         </main>
+            
+        <footer id="footer-Con">
+            <section id="footer-Map" class="grid">
+                <h2 class="hidden">Footer Navigation</h2>
+                <div id="map1">
+                    <h2>About Us</h2>
+                    <ul>
+                        <li><a href="#">Our drink</a></li>
+                        <li><a href="#">Our story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Policies and reports</a></li>
+                        <li><a href="#">Download our app</a></li>
+                    </ul>
+                </div>
+                <div id="map2">
+                    <h2>Dietary information</h2>
+                    <ul>
+                        <li><a href="#">Nutrition</a></li>
+                        <li><a href="#">Allergens</a></li>
+                        <li><a href="#">Dietary information</a></li>
+                    </ul>
+                </div>
+                 <div id="map3">
+                    <h2>Site map</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Log-in</a></li>
+                        <li><a href="#">AccountOur drink</a></li>
+                    </ul>
+                </div>
+                <div id="map4">
+                    <h2>Contact us</h2>
+                     <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </section>
+               
+            <section id="policy-Con" class="grid">
+                <h2 class="hidden">Privacy notice</h2>
+                <ul id="policy-copy">
+                    <li><a href="#">Privacy notice</a></li>
+                    <li><a href="#">Cookie policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">2023 Orbitz All rights reserved</a></li>
+                </ul>
+
+                <div id="footer-sns">
+                     <ul>
+                        <li><a href="#"><img src="images/mobile/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="images/mobile/in.png" alt="in"></a></li>
+                        <li><a href="#"><img src="images/mobile/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+                
+                <div id="top-scroll">
+                    <img src="images/mobile/Top Arrow.png" alt="Top Arrow">
+                </div>
+            </section>
+        </footer>
     </div>
     
 </body>
