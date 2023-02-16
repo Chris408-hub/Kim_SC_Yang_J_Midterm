@@ -1,0 +1,390 @@
+/* 
+
+    CSS Guide
+
+    1. General Styles
+    2. Grid
+    3. Header
+    4. Main 
+    5. Footer
+
+*/
+
+/* 1. ---General Styles--- */
+
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* 2. ---Grid--- */
+
+/* this is the exact same grid used in Adobe XD, we have recreated 
+the grid using CSS. It is a class because we will use multiple grids */
+
+.grid {
+    display: grid;
+    padding-right: 1px; 
+    grid-template-columns: repeat(4, 80px);
+    grid-column-gap: 18px;
+}
+
+/* 3. ---Header--- */
+
+#main-header{
+    
+    width: 375px;
+    height: 130px;
+    background-color: #E64584;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#header-logo {
+
+    width: 189px;
+    margin-top: 40px;
+}
+
+#header-hamburger {
+    position: relative;
+}
+
+#header-hamburger img {
+    width: 58px;
+    height: 35px;
+    margin-top: 50px;
+    left:200px;
+
+}
+
+#header-hamburger ul{
+    
+    width: 375px;
+    height: 585px;
+    background-color: #E64584;
+    position: absolute;
+    left:-285px;
+    top:90px;
+
+}
+
+#header-hamburger li a{
+    font-size: 40px;
+    padding-left: 120px;
+    line-height: 120px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#header-hamburger:hover ul{
+    display: block;
+
+}
+
+#header-hamburger li a:hover {
+    color: #2E01A7;
+    font-weight: 600px;
+    text-decoration: underline;
+}
+
+/* 4. ---Main--- */
+
+/* #sign-up {
+    margin: 10px 15px 10px 15px;
+} */
+
+#email h2 {
+    font-size: 30px;
+    font-weight: 700px;
+    padding-left: 5px;
+    margin-top: 20px;
+    color: #E30C5F;
+}
+
+#email p {
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    line-height: 20px;
+
+}
+
+#sign-up #email-box {
+    width: 335px;
+    height: 43px;
+    border: 1px solid #E30C5F;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#email #send-code{
+    width: 166px;
+    height: 43px;
+    border: solid #E30C5F;
+    border-radius: 50px;
+    background-color: #E30C5F;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#email #send-code p {
+    font-size: 10px;
+    font-weight: 500px;
+    margin-top:-10px;
+}
+
+#sign-up h3 {
+    font-size: 20px;
+    font-weight: 500px;
+}
+
+#personal-info {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+#personal-info .box{
+
+    width: 260px;
+    height: 39px;
+    border: 1px solid #E30C5F;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#personal-info #first-name {
+    grid-column: 1/3;
+}
+
+#personal-info #last-name {
+    grid-column: 1/3;
+    margin-top: 20px;
+}
+
+#personal-info #password {
+    grid-column: 1/-1;
+    margin-top: 20px;
+}
+
+#password p {
+    font-size: 15px;
+    margin-top:10px;
+}
+
+
+
+
+#term input {
+    grid-column: 1/1;
+    width: 15px;
+    height: 15px;
+    margin-left: 30px;
+}
+
+#term p {
+    grid-column: 1/-1;
+    font-size: 10px;
+    font-weight: 500px;
+    margin-left:54px;
+    margin-top: -15px;
+}
+
+#submit {
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+#submit #submit-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:#E30C5F;
+    border: 1px solid #E30C5F;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500px;
+}
+
+#submit #submit-btn:hover {
+    background-color:#429377;
+    border: 1px solid #429377;
+    color: white;
+}
+
+#submit #log-in{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:50px;
+    margin-left: -300px;
+}
+
+#submit #log-in p {
+    font-size: 15px;
+    font-weight: 500px;
+    margin-top: -40px;
+    margin-left: 200px;
+    text-decoration: underline;
+    
+}
+
+#submit a {
+    font-size: 15px;
+    margin-left: -42px;
+    margin-top: -40px;
+    text-decoration: underline;
+}
+
+
+/* 5. ---Footer--- */
+
+#footer-Map {
+    width: 100%;
+    height: 140px;
+    background-color: #429377;
+    color: white;
+    padding-top: 30px;
+    
+}
+
+#footer-Map h2 {
+font-size: 12px;
+font-weight: 500px;
+margin-bottom: 30px;
+}
+
+#footer-Map ul li {
+    display: block;
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+#footer-Map ul li a {
+color: white;
+}
+
+#footer-Map #map1 {
+    grid-column: 1/1;
+}
+
+
+#footer-Map #map2 {
+    grid-column: 2/2;
+}
+
+
+#footer-Map #map3 {
+    grid-column: 3/3;
+}
+
+
+#footer-Map #map4 {
+    grid-column: 4/-1;
+}
+
+#map1 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map2 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map3 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#map4 ul li a:hover {
+    color: #2E01A7;
+    text-decoration: underline #2E01A7;
+}
+
+#policy-Con {
+    font-family: Josefin Sans;
+    width: 100%;
+    height: 80px;
+    background-color: #265847;
+    color: white;
+}
+
+#policy-Con #policy-copy {
+    width: 289px;
+    height: 7px;
+    font-size: 7px;
+    color: #FAF7F7;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+#policy-Con #policy-copy li a{
+    padding-left: 3px;
+    color: white;
+
+}
+
+#policy-Con #policy-copy li a:hover {
+    color: #F8B851;
+    text-decoration: underline #F8B851;
+    font-weight: 400px;
+}
+
+#policy-Con #footer-sns {
+    grid-column: 4/-1;
+
+}
+
+#policy-Con #footer-sns ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-sns img {
+    width: 18px;
+    height: 18px;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+#policy-Con #top-scroll {
+    width: 50px;
+    height: 15px;
+    grid-column: 2/3;
+    position: relative;
+    padding-top: 10px;
+    margin-left: 75px;
+    border-color: none;
+ 
+}
+
+
+#policy-Con #top-scroll p{
+    position: absolute;
+    left: 13px;
+    bottom: 5px;
+    top:12px;
+}
