@@ -300,7 +300,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     grid-column: 1/-1;
     margin: 20px auto;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 700;
     animation-duration: 2s;
     animation-name: slidein;
 

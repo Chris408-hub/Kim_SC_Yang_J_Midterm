@@ -162,6 +162,10 @@ ul li {
     border: solid #429377;
 }
 
+#send-code a{
+    color: white;
+}
+
 #send-code p {
     margin-top: 20px;
     font-size: 40px;
@@ -301,6 +305,7 @@ color: white;
 
 #footer-Map #map1 {
     grid-column: 2/4;
+    margin-left: -20px;
 }
 
 
@@ -311,11 +316,13 @@ color: white;
 
 #footer-Map #map3 {
     grid-column: 8/10;
+    margin-left: 20px;
 }
 
 
 #footer-Map #map4 {
     grid-column: 11/-1;
+    margin-left: -30px;
 }
 
 #map1 ul li a:hover {
