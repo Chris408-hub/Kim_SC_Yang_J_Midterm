@@ -26,12 +26,12 @@
                     <li><a href="index_desktop.html">HOME</a></li>
                     <li><a href="about_desktop.html">ABOUT</a></li>
                     <li><a href="#">SHOP</a></li>
-                    <li><a href="contact_desktop.html">Log-in</a></li>
+                    <li><a href="contact-desktop.html">Log-in</a></li>
                 </ul>
             </nav>
             <div id="header-icons">    
                    <ul>
-                    <li><a href="contact_desktop.html"><img src="images/account.svg" alt="account"></a></li>
+                    <li><a href="contact-desktop.html"><img src="images/account.svg" alt="account"></a></li>
                     <li><a href="#"><img src="images/twitter-white.svg" alt="twitter"></a></li>
                     <li><a href="#"><img src="images/linkedin-white.svg" alt="linkedin"></a></li>
                     <li><a href="#"><img src="images/instagram-white.svg" alt="instagram"></a></li>
@@ -40,49 +40,40 @@
         </header>
 
         <main id="sign-up">
-            <section id="email">
+            <section id="contact-form-field">
                 <h2>Create an Account</h2>
                 <p>Please enter your email address. We will send a verification code to that address to Verify you own it.<br>The code will expire in 15 minutes.</p>
-                <h3>Email Address*</h3>
-                <div id="email-box"></div>
-                <div id="send-code"><p>Send Vertification Code</p></div>
-            </section>
 
-            <section id="personal-info">
-                <h2 class="hidden">personal information</h2>
-                <div id="name" class="grid">
-                    <div id="first-name">
-                        <h3>First Name*</h3>
-                        <div id="firstn-box" class="box"></div>
+                <form id="contact-form" action="email.php" method="POST" enctype="text/plain">
+
+                    <p>Email Address*</p>
+                    <input id="email" name="Email" type="text" required placeholder="abcdefg@gmail.com">
+
+                    <div id="send-code"><p>Send Vertification Code</p></div>
+
+                    <div class="flex" id="flex">
+                        <div><p>First Name</p>
+                        <input id="firstname" name="First Name" type="text" placeholder="ex) Alex"></div>
+                    
+                        <div><p>Last Name</p>
+                        <input id="lastname" name="Last Name" type="text" placeholder="ex) Tailer"></div>
                     </div>
-                    <div id="last-name">
-                        <h3>Last Name*</h3>
-                        <div id="lastn-box" class="box"></div>
+
+                    <div id="password-con"><p>Password</p>
+                        <input id="password" name="password" type="number" placeholder="123-456-7890">
+                        <p>Password must contain at least:<br>8 characters, 1 uppercase letter, 1 lowercase letter,1 number,1 special character and no spaces.</p></div>
+                    
+                    <div class="checkbox"><input type="checkbox">I agree to receive email from Orbitz about its brands and promotions.</div>
+                    <div class="checkbox"><input type="checkbox">I agree The Orbitz Terms of use and Privacy Policy*.</div>
+
+                    <div id="submit">
+                        <button id="submit-btn" type="submit">Submit</button>
+                        
+                        <p>Already have an account?  <a id="log-in">Log-In</a></p>
+                        
                     </div>
-                </div>
-                <div id="password">
-                    <h3>Password*</h3>
-                    <div id="password-box" class="box"></div>
-                    <p>Password must contain at least:<br>8 characters, 1 uppercase letter, 1 lowercase letter,1 number,1 special character and no spaces.</p>
-                </div>
-
-            </section>
-
-            <section id="term" class="grid">
-                <h2 class="hidden">Terms</h2>
-                <input type="checkbox">
-                <p>I agree to receive email from Orbitz about its brands and promotions. </p>
-                <input type="checkbox">
-                <p>I agree The Orbitz Terms of use and Privacy Policy*. </p>
-            </section>
-
-            <section id="submit">
-                <button id="submit-btn" type="submit">Submit</button>
-                <div id="log-in">
-                    <p>Already have an account?</p>
-                    <a id="log-in">Log-In</a>
-                </div>
-            </section>
+            </form>
+            </section>       
 
         </main>
 
@@ -90,7 +81,7 @@
             <section id="footer-Map" class="grid">
                 <h2 class="hidden">Footer Navigation</h2>
                 <div id="map1">
-                    <h2>About Us</h2>
+                    <h3>About Us</h3>
                     <ul>
                         <li><a href="#">Our drink</a></li>
                         <li><a href="#">Our story</a></li>
@@ -100,7 +91,7 @@
                     </ul>
                 </div>
                 <div id="map2">
-                    <h2>Dietary information</h2>
+                    <h3>Dietary information</h3>
                     <ul>
                         <li><a href="#">Nutrition</a></li>
                         <li><a href="#">Allergens</a></li>
@@ -108,7 +99,7 @@
                     </ul>
                 </div>
                  <div id="map3">
-                    <h2>Site map</h2>
+                    <h3>Site map</h3>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -118,7 +109,7 @@
                     </ul>
                 </div>
                 <div id="map4">
-                    <h2>Contact us</h2>
+                    <h3>Contact us</h3>
                      <ul>
                         <li><a href="#">FAQs</a></li>
                         <li><a href="#">Contact us</a></li>
@@ -150,12 +141,10 @@
                 
                 <div id="top-scroll">
                     <img src="images/arrow.svg" alt="Top Arrow">
-                    <p>TOP</p>
+                    <a href="#">TOP</a>
                 </div>
             </section>
         </footer>
-        
     </div>
-    
 </body>
 </html>
