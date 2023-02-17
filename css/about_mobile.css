@@ -84,6 +84,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     position: absolute;
     left:-285px;
     top:100px;
+    z-index: 1;
 
 }
 
