@@ -28,13 +28,12 @@
 
         <main id="sign-up">
             <form action="email.php" method="post" enctype="text/plain">
-
                 <section id="email">
                     <h2>Create an Account</h2>
                     <p>Please enter your email address. We will send a verification code to that address to Verify you own it.<br>The code will expire in 15 minutes.</p>
                     <h3>Email Address*</h3>
                     <input id="email-box" type="email" placeholder="abcd@***.com">
-                    <button id="send-code"><p>Send Vertification Code</p></button>
+                    <div id="send-code"><p>Send Vertification Code</p></div>
                 </section>
 
                 <section id="personal-info">
@@ -42,17 +41,17 @@
                     <div id="name" class="grid">
                         <div id="first-name">
                             <h3>First Name*</h3>
-                            <input id="firstn-box" class="box" name="first name" type="text" placeholder="first-name">
-                        </input>
+                            <input id="firstn-box" class="box" name="First Name" type="text" placeholder="ex) Alex">
+                        </div>
                         <div id="last-name">
                             <h3>Last Name*</h3>
-                            <input id="lastn-box" class="box" name="last name" type="text" placeholder="last-name">
+                            <input id="lastn-box" class="box" name="Last Name" type="text" placeholder="ex) Tailer">
                         </div>
                     </div>
 
                     <div id="password">
                         <h3>Password*</h3>
-                        <input id="password-box" class="box" name="password" type="password" placeholder="last-name">
+                        <input id="password-box" class="box" name="password" type="number" placeholder="123-456-7890">
                         <p>Password must contain at least:<br>8 characters, 1 uppercase letter, 1 lowercase letter,1 number,1 special character and no spaces.</p>
                     </div>
 
@@ -67,7 +66,8 @@
                 </section>
 
                 <section id="submit">
-                    <button id="submit-btn" type="submit"><p>Submit</p></button>
+                    <h2 class="hidden">submit</h2>
+                    <button id="submit-btn" type="submit">Submit</button>
                     <div id="log-in">
                         <p>Already have an account?</p>
                         <a id="log-in-a">Log-In</a>
@@ -124,7 +124,7 @@
                     <li><a href="#">Privacy notice</a></li>
                     <li><a href="#">Cookie policy</a></li>
                     <li><a href="#">Terms and conditions</a></li>
-                    <p>2023 Orbitz All rights reserved</p>
+                    <li><p>2023 Orbitz All rights reserved</p></li>
                 </ul>
 
                <div id="footer-sns">
@@ -136,7 +136,7 @@
                 </div>
                 
                 <div id="top-scroll">
-                    <img src="images/mobile/Top Arrow.png" alt="Top Arrow">
+                    <img src="images/top_arrow.svg" alt="Top Arrow"><p>TOP</p>
                 </div>
             </section>
         </footer>
