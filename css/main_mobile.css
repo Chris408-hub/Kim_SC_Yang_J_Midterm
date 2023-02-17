@@ -159,6 +159,7 @@ the grid using CSS. It is a class because we will use multiple grids */
 
 #sign-up button:hover {
     background-color: #429377;
+    border: 1px solid #429377;
     color: white;
 }
 
@@ -349,6 +350,12 @@ the grid using CSS. It is a class because we will use multiple grids */
     font-size: 26px;
 
 }
+
+#testimonials .testimonial #buynow:hover {
+    background-color: #e645e6;
+    border: solid #e645e6;
+}
+
 /* 
 #testimonials #user1 {
     color:#2E01A7;

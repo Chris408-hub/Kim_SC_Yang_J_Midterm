@@ -166,6 +166,8 @@ the grid using CSS. It is a class because we will use multiple grids */
 
 #sign-up button:hover {
     background-color: #429377;
+    border: 1px solid #429377;
+
     color: white;
 }
 
