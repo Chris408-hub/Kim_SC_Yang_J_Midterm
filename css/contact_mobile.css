@@ -142,12 +142,16 @@ the grid using CSS. It is a class because we will use multiple grids */
     color: white;
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-#email #send-code  a{
-    font-size: 10px;
+#email #send-code  a {
+    color:white;
+    font-size: 12px;
     font-weight: 500;
-    margin-top:-5px;
+    
 }
 
 #sign-up h3 {
