@@ -144,7 +144,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     text-align: center;
 }
 
-#email #send-code  p{
+#email #send-code  a{
     font-size: 10px;
     font-weight: 500;
     margin-top:-5px;
