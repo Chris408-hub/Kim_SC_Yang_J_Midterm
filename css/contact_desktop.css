@@ -112,127 +112,164 @@ ul li {
     margin: 100px 145px 100px 145px;
 }
 
-#email h2 {
+#contact-form-field{
+    width: 1600px
+}
+
+#contact-form-field h2 {
     font-size: 100px;
     font-weight: 700;
     padding-left: 450px;
     color: #E30C5F;
 }
 
-#email p {
+#contact-form-field p {
     font-size: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
     line-height: 140%;
-
 }
 
-#sign-up #email-box {
-    width: 1543px;
-    height: 110px;
-    border: 1px solid #E30C5F;
-    border-radius: 50px;
-    margin-top: 20px;
-}
-
-#email #send-code{
-    width: 620px;
-    height: 110px;
-    border: solid #E30C5F;
-    border-radius: 50px;
-    background-color: #E30C5F;
-    color: white;
-    margin-top: 30px;
-    text-align: center;
-}
-
-#email #send-code p {
-    font-size: 40px;
-    font-weight: 500px;
-}
-
-#sign-up h3 {
+#contact-form p {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 30px;
     font-weight: 500;
 }
 
-#personal-info {
-    margin-top: 100px;
-    margin-bottom: 30px;
-
-}
-
-#personal-info .box{
-
-    width: 757px;
-    height: 110px;
+#email {
+    width: 1600px;
+    height: 111px;
     border: 1px solid #E30C5F;
-    border-radius: 50px;
-    margin-top: 20px;
-}
-
-#personal-info #first-name {
-    grid-column: 1/5;
-}
-
-#personal-info #last-name {
-    grid-column: 6/10;
-}
-
-#personal-info #password {
-    margin-top: 70px;
-}
-
-#password p {
+    border-radius: 25px;
+    margin-top: 5px;
     font-size: 30px;
+}
+
+#send-code{
+    width: 620px;
+    height: 110px;
+    border: solid #E30C5F;
+    border-radius: 70px;
+    background-color: #E30C5F;
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#send-code:hover {
+    background-color: #429377;
+    border: solid #429377;
+}
+
+#send-code p {
     margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
 }
 
-#term input {
-    grid-column: 2/2;
+#flex {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#term p {
-    grid-column: 3/10;
+#firstname {
+    width: 757px;
+    height: 111px;
+    border: 1px solid #E30C5F;
+    border-radius: 25px;
+    margin-top: 10px;
     font-size: 30px;
-    font-weight: 500px;
-    padding-top: 20px;
 }
 
+#lastname {
+    width: 757px;
+    height: 111px;
+    border: 1px solid #E30C5F;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#password-con {
+    width: 1543px;
+    height: 358px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+#password {
+    width: 757px;
+    height: 111px;
+    border: 1px solid #E30C5F;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.checkbox {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
 #submit {
+    width: 767px;
+    height: 500px;
     margin-top: 60px;
     margin-left: 450px;
 }
 
-#submit #submit-btn {
+#submit-btn {
     width: 396px;
     height: 110px;
     border-radius: 50px;
     background-color:#E30C5F;
     border: 1px solid #E30C5F;
+    font-family: 'Montserrat';
     color: white;
     text-align: center;
     font-size: 40px;
-    font-weight: 500px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 180px;
 }
 
-
-
-#submit #log-in {
-    display: inline-block;
+#submit-btn:hover{
+    background-color: #429377;
+    border: solid #429377;
 }
 
 #submit p {
+    font-family: 'Montserrat';
     font-size: 40px;
-    font-weight: 500px;
+    font-weight: 600;
     padding-top: 10px;
     text-decoration: underline;
+    letter-spacing: 0.05em;
 }
 
-/* #submit a {
-    display: inline-block;
-} */
+#submit a {
+    text-decoration: underline;
+    color: #E30C5F;
+    font-weight: 600;
+}
 
+#submit a:hover {
+    color: #429377;
+}
 
 /* 5. ---Footer--- */
 
@@ -245,7 +282,7 @@ ul li {
     padding-top: 100px;
 }
 
-#footer-Map h2 {
+#footer-Map h3 {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 40px;
@@ -359,9 +396,15 @@ color: white;
     height: 13px;
 }
 
-#policy-Con #top-scroll p{
+#policy-Con #top-scroll a{
     display: inline-block;
     font-size: 13px;
     font-weight: 500;
+    color: white;
+}
+
+#top-scroll a:hover {
+    color: #E30C5F;
+    font-size: 20px;
 }
 

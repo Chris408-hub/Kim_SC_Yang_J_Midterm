@@ -1,7 +1,5 @@
 /* 
-
     CSS Guide
-
     1. General Styles
     2. Grid
     3. Header
@@ -13,7 +11,6 @@
     9. Social media
     10. Quick links
     11. Footer
-
 */
 
 /* 1. ---General Styles--- */
@@ -362,7 +359,6 @@ the grid using CSS. It is a class because we will use multiple grids */
 #testimonials #user1 {
     color:#2E01A7;
 }
-
 #testimonials #user2{
     color:#56B5A8;
 } */
@@ -596,7 +592,3 @@ color: white;
     bottom: 5px;
     top:12px;
 }
-
-
-
-
