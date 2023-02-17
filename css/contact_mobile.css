@@ -284,6 +284,8 @@ color: white;
 
 #footer-Map #map1 {
     grid-column: 1/1;
+    margin-left:15px;
+
 }
 
 

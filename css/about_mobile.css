@@ -262,6 +262,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     font-size: 20px;
     grid-column: 2/3;
     background-color:#F8B851;
+    border: 1px solid #F8B851;
     color:white;
     border-radius: 50px;
     font-size: 20px;
@@ -269,6 +270,13 @@ the grid using CSS. It is a class because we will use multiple grids */
     margin-left: -10px;
 }
 
+
+#seemore #seemore-text button:hover {
+    color: white;
+    background-color:#E64584;
+    border: 1px solid #E64584;
+
+}
 
 /* 8. ---Footer--- */
 
@@ -294,11 +302,13 @@ margin-bottom: 30px;
 }
 
 #footer-Map ul li a {
-color: white;
+    color: white;
 }
 
 #footer-Map #map1 {
     grid-column: 1/1;
+    margin-left:15px;
+
 }
 
 

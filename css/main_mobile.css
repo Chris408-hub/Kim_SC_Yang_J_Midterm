@@ -150,6 +150,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     height: 74px;
     background-color:white;
     color: #E64584;
+    border: 1px solid #E64584;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -345,6 +346,7 @@ the grid using CSS. It is a class because we will use multiple grids */
     width: 173px;
     height: 52px;
     background-color:#429377;
+    border: 1px solid #429377;
     border-radius: 50px;
     color: white; 
     font-size: 26px;
@@ -489,6 +491,7 @@ color: white;
 
 #footer-Map #map1 {
     grid-column: 1/1;
+    margin-left:15px;
 }
 
 
